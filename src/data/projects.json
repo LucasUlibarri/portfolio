@@ -1,0 +1,46 @@
+[
+  {
+    "id": "ruedas-ng",
+    "slug": "ruedas-ng",
+    "title": "Ruedas NG",
+    "summary": "Wholesale and distribution of alloy wheels with a refreshed, mobile-first experience.",
+    "description": "Ruedas NG is a company in charge of the wholesale and distribution of alloy wheels, offering top quality products manufactured under rigorous quality standards. They were looking to refresh the style of their website with a cleaner and more modern look, so that the user can navigate and find their products in a simpler and clearer way. They also needed to improve the mobile experience for users as it was previously non-existent.",
+    "image": "/images/projects/ruedas-ng/cover.png",
+    "externalLink": "https://ruedasng.com.ar/",
+    "tags": ["UX/UI", "Web Design", "Mobile"],
+    "featured": false
+  },
+  {
+    "id": "simplimuv",
+    "slug": "simplimuv",
+    "title": "SimpliMuv SaaS",
+    "summary": "A SaaS platform for dealers to centralise sales and customise motorbikes online.",
+    "description": "SimpliMuv arose as a solution for the different distributors to have a customised online shop according to the standards that the client demanded...",
+    "image": "/images/projects/simplimuv/cover.png",
+    "externalLink": "https://simplimuv.com/",
+    "tags": ["SaaS", "Product Design", "UX"],
+    "featured": false
+  },
+  {
+    "id": "ba-desde-adentro",
+    "slug": "ba-desde-adentro",
+    "title": "BA Desde Adentro",
+    "summary": "Internal landing page proposal for Buenos Aires city workers intranet.",
+    "description": "During the time I worked in the government of the city of Buenos Aires...",
+    "image": "/images/projects/ba-desde-adentro/cover.gif",
+    "externalLink": "https://badesdeadentro.gob.ar/",
+    "tags": ["Government", "Intranet", "UI Design"],
+    "featured": false
+  },
+  {
+    "id": "black-snake",
+    "slug": "black-snake",
+    "title": "Black Snake (AUST)",
+    "summary": "",
+    "description": "BlackSnake (AUST) is a company that manufactures recovery strops for various industries, such as mining, 4WD, military, agricultural use, among others. The objective was to create a platform where they could have their wide range of products and following the aesthetic guidelines intended by the client.",
+    "image": "/images/projects/black-snake/cover.png",
+    "externalLink": "https://www.blacksnakestrops.com/",
+    "tags": ["Strops", "UX Design", "UI Design"],
+    "featured": true
+  }
+]
