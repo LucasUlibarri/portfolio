@@ -11,14 +11,12 @@ function Header() {
         {/* Navigation */}
         <nav className="nav">
           
-          <NavLink to='/' className='nav-link'>Home</NavLink>
+          <NavLink to='/' className={({ isActive }) => isActive? 'nav-link active' : 'nav-link'}>Home</NavLink>
           
-          <NavLink to='/about' className='nav-link'>About Me</NavLink>
+          <NavLink to='/about' className={({ isActive }) => isActive? 'nav-link active' : 'nav-link'}>About Me</NavLink>
           
-          <NavLink to='/' className='nav-link'>Play</NavLink>
-          
-          <NavLink to='/' className='nav-link'>Contact</NavLink>
-
+          <NavLink to='/play' className={({ isActive }) => isActive? 'nav-link active' : 'nav-link'}>Play</NavLink>
+        
         </nav>
 
       </div>

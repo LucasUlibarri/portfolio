@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "src": "/images/play/roma-01.jpg",
+    "alt": "Colosseum in Rome, 2024."
+  },
+  {
+    "id": 2,
+    "src": "/images/play/roma-02.jpg",
+    "alt": "Castel Sant'Angelo in Rome, 2024."
+  },
+  {
+    "id": 3,
+    "src": "/images/play/roma-03.jpg",
+    "alt": "Street in Termini, Rome, 2024."
+  },
+  {
+    "id": 4,
+    "src": "/images/play/sydney-01.jpg",
+    "alt": "Botanical Garden in Sydney, 2024."
+  },
+  {
+    "id": 5,
+    "src": "/images/play/sydney-02.jpg",
+    "alt": "Bird in Sydney Botanical Garden, 2024."
+  },
+  {
+    "id": 6,
+    "src": "/images/play/sydney-03.jpg",
+    "alt": "Sydney Opera House, 2024."
+  }
+]

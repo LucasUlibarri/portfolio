@@ -1,8 +1,6 @@
 function Footer() {
   return (
-    <footer className="footer">
-      <div className="container footer-inner">
-
+    <footer>
         <ul className="footer-links">
           <li>
             <a href="https://dribbble.com/LucasUlibarri" target="_blank" rel="noopener noreferrer">
@@ -27,13 +25,13 @@ function Footer() {
               CodePen
             </a>
           </li>
+
+          <li>
+            <a href="https://github.com/LucasUlibarri" target="_blank" rel="noopener noreferrer">
+              GitHub
+            </a>
+          </li>
         </ul>
-
-        <p className="footer-copy">
-          Lucas Ulibarri | Product Designer © {new Date().getFullYear()}
-        </p>
-
-      </div>
     </footer>
   )
 }
