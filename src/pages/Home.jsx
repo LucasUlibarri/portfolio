@@ -1,38 +1,35 @@
-import Layout from '../components/Layout'
-import ProjectCard from '../components/ProjectCard'
 import projects from '../data/projects.json'
+import experience from '../data/experience.json'
+import {
+  HomeNav,
+  Hero,
+  Experience,
+  SelectedWork,
+  Thinking,
+  Approach,
+  About,
+  Contact,
+  HomeFooter,
+} from '../sections/home'
+
+const recentExp = [...experience]
+  .sort((a, b) => b.startYear - a.startYear)
+  .slice(0, 3)
 
 function Home() {
-    return (
-    <Layout>
-        <div className="home">
-            {/* Hero */}
-            <section className="hero">
-                <h1>Hi! Im Lucas,
-                    <br></br>
-                    A product designer.
-                </h1>
-                <p className="hero-text">
-                    Passionate about web development and constantly looking for new challenges and trying to learn new things.
-                </p>
-                
-            </section>
-
-            {/* Case sudy featured */}
-            <section className='projects'>
-                {projects
-                .slice()
-                .sort((a,b) => (b.featured) - Number(a.featured))
-                .map(project =>(
-                    <ProjectCard
-                        key={project.id}
-                        project={project}
-                    />
-                ))}
-            </section> 
-        </div>
-    </Layout>
-    )
+  return (
+    <div>
+      <HomeNav />
+      <Hero />
+      <Experience items={recentExp} />
+      <SelectedWork projects={projects} />
+      <Thinking />
+      <Approach />
+      <About />
+      <Contact />
+      <HomeFooter />
+    </div>
+  )
 }
 
 export default Home

@@ -5,7 +5,7 @@ import Layout from "../components/Layout"
 function Project() {
     const { id } = useParams()
 
-    const project = projects.find(project => p.id === id)
+    const project = projects.find(project => project.id === id)
 
     if(!project){
         return <h2>Project not found</h2>
