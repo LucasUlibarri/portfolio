@@ -1,5 +1,41 @@
 [
   {
+    "id": "black-snake",
+    "slug": "black-snake",
+    "title": "Black Snake (AUST)",
+    "summary": "Custom e-commerce experience for a highly specialized industrial product.",
+    "description": "Custom e-commerce experience for a highly specialized industrial product. Standard patterns didn't work — designed a configuration system from scratch.",
+    "image": "/images/projects/black-snake/cover.png",
+    "externalLink": "https://www.blacksnakestrops.com/",
+    "tags": ["E-commerce", "UX Design", "UI Design"],
+    "year": 2024,
+    "featured": true
+  },
+  {
+    "id": "risk-management-tool",
+    "slug": "risk-management-tool",
+    "title": "Risk Management Tool",
+    "summary": "Internal tool for managing and visualising organisational risk.",
+    "description": "Placeholder — add a short description of the problem this tool solves and how it fits into the broader workflow once it's written up.",
+    "image": null,
+    "externalLink": null,
+    "tags": ["Internal Tool", "Product Design"],
+    "year": 2024,
+    "featured": true
+  },
+  {
+    "id": "portfolios",
+    "slug": "portfolios",
+    "title": "Art Director Portfolios",
+    "summary": "Worked with award-winning art directors and creatives — including Jon Kubik — to restructure their portfolios.",
+    "description": "Worked with art directors and writers to restructure their portfolios — shifting focus toward the work itself, improving clarity, hierarchy and visibility across projects. Placeholder — links and full write-up to come.",
+    "image": null,
+    "externalLink": null,
+    "tags": ["Portfolio", "Art Direction", "UX/UI"],
+    "year": 2023,
+    "featured": true
+  },
+  {
     "id": "ruedas-ng",
     "slug": "ruedas-ng",
     "title": "Ruedas NG",
@@ -31,16 +67,5 @@
     "externalLink": "https://badesdeadentro.gob.ar/",
     "tags": ["Government", "Intranet", "UI Design"],
     "featured": false
-  },
-  {
-    "id": "black-snake",
-    "slug": "black-snake",
-    "title": "Black Snake (AUST)",
-    "summary": "BlackSnake (AUST) is a company that manufactures recovery strops for various industries, such as mining, 4WD, military, agricultural use, among others. The objective was to create a platform where they could have their wide range of products and following the aesthetic guidelines intended by the client.",
-    "description": "BlackSnake (AUST) is a company that manufactures recovery strops for various industries, such as mining, 4WD, military, agricultural use, among others. The objective was to create a platform where they could have their wide range of products and following the aesthetic guidelines intended by the client.",
-    "image": "/images/projects/black-snake/cover.png",
-    "externalLink": "https://www.blacksnakestrops.com/",
-    "tags": ["Strops", "UX Design", "UI Design"],
-    "featured": true
   }
 ]

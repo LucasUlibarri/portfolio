@@ -1,10 +1,10 @@
-import Header from "./Header";
+import FloatingNav from "./FloatingNav";
 import Footer from "./Footer";
 
 function Layout({ children }) {
     return (
         <>
-            <Header />
+            <FloatingNav />
             <main className="main">{children}</main>
             <Footer />
         </>

@@ -27,3 +27,11 @@ dist-ssr
 
 # Planning docs (personal notes, not for the repo)
 docs/v3-planning/
+resources
+
+# Third-party agent skills installed via `npx skills add` (not project code)
+.agents/
+skills-lock.json
+
+# Local Claude Code settings (machine-specific, not project config)
+.claude/
