@@ -43,5 +43,14 @@
     "startYear": 2022,
     "endYear": 2023,
     "description": "Alphesda is a Melbourne-based agency dedicated to providing digital solutions to their clients, offering design, development, maintenance and enhancement of their websites in order to have a greater reach and engagement with their clients. My responsibilities included the creation of pages and components on client sites, development using HTML, CSS, JavaScript, WordPress and Wix, adjustments to existing components and direct communication with clients."
+  },
+  {
+    "id": 6,
+    "company": "Accenture Argentina",
+    "role": "Digital Product Design Specialist",
+    "period": "2024-Present",
+    "startYear": 2024,
+    "endYear": 2026,
+    "description": "Full-time, hybrid, based in Buenos Aires. Started as Product Designer | Design Experience Senior Analyst and was promoted to Digital Product Design Specialist."
   }
 ]

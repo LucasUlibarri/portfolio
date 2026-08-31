@@ -10,17 +10,14 @@ function Contact() {
       <div className="pf-contact__grid">
         <a href="mailto:lucasulibarri@icloud.com" className="pf-contact__link">
           <span className="pf-contact__link-label">Email</span>
-          <span className="pf-contact__link-text">lucasulibarri@icloud.com</span>
           <span className="pf-contact__link-arrow">↗</span>
         </a>
         <a href="https://www.linkedin.com/in/lucas-ulibarri/" target="_blank" rel="noreferrer" className="pf-contact__link">
           <span className="pf-contact__link-label">LinkedIn</span>
-          <span className="pf-contact__link-text">lucasulibarri</span>
           <span className="pf-contact__link-arrow">↗</span>
         </a>
         <a href="https://github.com/LucasUlibarri" target="_blank" rel="noreferrer" className="pf-contact__link">
           <span className="pf-contact__link-label">GitHub</span>
-          <span className="pf-contact__link-text">lucasulibarri</span>
           <span className="pf-contact__link-arrow">↗</span>
         </a>
         {/* Instagram — add once you send the handle/URL, so this doesn't ship as a dead link. */}

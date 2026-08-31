@@ -1,71 +1,92 @@
 [
   {
-    "id": "black-snake",
-    "slug": "black-snake",
-    "title": "Black Snake (AUST)",
-    "summary": "Custom e-commerce experience for a highly specialized industrial product.",
-    "description": "Custom e-commerce experience for a highly specialized industrial product. Standard patterns didn't work — designed a configuration system from scratch.",
-    "image": "/images/projects/black-snake/cover.png",
-    "externalLink": "https://www.blacksnakestrops.com/",
-    "tags": ["E-commerce", "UX Design", "UI Design"],
-    "year": 2024,
-    "featured": true
-  },
-  {
     "id": "risk-management-tool",
     "slug": "risk-management-tool",
     "title": "Risk Management Tool",
-    "summary": "Internal tool for managing and visualising organisational risk.",
-    "description": "Placeholder — add a short description of the problem this tool solves and how it fits into the broader workflow once it's written up.",
-    "image": null,
+    "summary": "Internal risk-management platform that moved operational, compliance and third-party risk out of scattered spreadsheets and into one shared structure.",
+    "image": "/images/projects/risk-management-tool/cover.jpg",
+    "imageNote": "Illustrative image — the actual project can't be shared publicly.",
     "externalLink": null,
     "tags": ["Internal Tool", "Product Design"],
-    "year": 2024,
-    "featured": true
+    "year": "2024–25",
+    "featured": true,
+    "body": [
+      "The client was tracking risk in spreadsheets — operational, compliance, third-party — spread across areas that each worked their own way. The real problem wasn't the Excels. It was that the knowledge lived in people, not in the system. When someone left, they took the know-how with them: where things were, how the tracking worked, why a risk was logged the way it was. The tool existed to move that knowledge out of people's heads and into a structure that survives them leaving — centralized, standardized, traceable.",
+      "It was built on three verticals — operational, compliance, third-party — sharing the same instruments but customized to how each one actually managed risk. That created a real trade-off: sometimes a risk had to live in two verticals at once. We chose to duplicate rather than force it into one, because the lens each area used to read that risk was genuinely different, and flattening them would have lost the thing that made each vertical worth separating.",
+      "Underneath, most relationships were many-to-many by design — a risk could link to any number of controls, action plans and incidents, and a single control could cover many risks. The one deliberate exception was assessment: a risk under evaluation freezes. It can't be modified or pulled into a second assessment while one is open. Everything else stays fluid; the thing being measured holds still. That rule is what keeps an evaluation meaning something instead of shifting under its own feet.",
+      "The platform worked at two scales. Analysts were the center of gravity — loading risks, configuring, managing the day-to-day. Managers sat above as super-users: running risk assessments, judging how controls were actually performing, reading the general picture through dashboards and filters. We never built the clean manager-only overview we'd imagined, because managers also needed edit access, and the exclusive view couldn't hold both. The overview stayed simpler than the ambition.",
+      "Most of the work wasn't screens. It was understanding how each area operated and where their processes genuinely differed versus where they'd just drifted apart — then unifying that into one standard without erasing the differences that mattered. It's still being developed, with a genuinely strong dev team; we were in from the early stages, iterating instruments together and doing design QA while it ran in the dev environment. The part I own is the structure — turning a room full of person-dependent spreadsheets into a system a team could build on."
+    ]
+  },
+  {
+    "id": "black-snake",
+    "slug": "black-snake",
+    "title": "Black Snake (AUST)",
+    "summary": "A patented recovery-rope product with almost no direct competitor to benchmark against — the shop had to solve a configuration problem before it could sell anything.",
+    "image": "/images/projects/black-snake/cover.jpg",
+    "externalLink": "https://www.blacksnakestrops.com/",
+    "tags": ["E-commerce", "UX Design", "UI Design"],
+    "year": "2022–23",
+    "featured": true,
+    "body": [
+      "BlackSnake makes recovery ropes — Kevlar and nylon, built for 4x4s, agriculture, heavy industry. A patented product with almost no direct competitor to benchmark against. The brief read simple: a shop to sell direct and reach buyers the distributors never would. It wasn't simple.",
+      "The difficulty was the product itself. Every rope varies on two axes at once — length and minimum breaking strength — with price and options depending on both, and some variables that couldn't be cleanly represented at all. That's not a catalog you pour into a store template. It's a configuration problem wearing the shape of an online shop.",
+      "The client had already committed to Wix. Its standard product setup couldn't hold that logic — built for fixed variants, it broke the moment two axes had to move together. So the work went under the surface: into developer mode, rebuilding the product and configuration engine in JavaScript. Not decorating a store — reconstructing the part the platform assumed was already solved.",
+      "Honest about where it landed: the shop never fully shipped. Shipping was the last knot — cost by weight, by quantity, by how the ropes sit on a pallet — and access to the editor closed before it was resolved. What holds up is the core: a configuration system that made a stubborn product buildable on a platform that wasn't built for it."
+    ]
   },
   {
     "id": "portfolios",
     "slug": "portfolios",
-    "title": "Art Director Portfolios",
-    "summary": "Worked with award-winning art directors and creatives — including Jon Kubik — to restructure their portfolios.",
-    "description": "Worked with art directors and writers to restructure their portfolios — shifting focus toward the work itself, improving clarity, hierarchy and visibility across projects. Placeholder — links and full write-up to come.",
-    "image": null,
-    "externalLink": null,
+    "title": "Award-Winning Advertising Creatives",
+    "summary": "Restructured portfolios for three award-winning advertising creatives — Sam Dolphin, Nick Morrissey and Jon Kubik — shifting the focus back onto the work itself.",
+    "image": "/images/projects/portfolios/cover.jpg",
+    "links": [
+      { "label": "Sam Dolphin", "url": "https://www.sam-dolphin.com/" },
+      { "label": "Nick Morrissey", "url": "https://www.nickmorrissey.com/" },
+      { "label": "Jon Kubik", "url": "https://jonkubik.com/" }
+    ],
     "tags": ["Portfolio", "Art Direction", "UX/UI"],
-    "year": 2023,
-    "featured": true
-  },
-  {
-    "id": "ruedas-ng",
-    "slug": "ruedas-ng",
-    "title": "Ruedas NG",
-    "summary": "Wholesale and distribution of alloy wheels with a refreshed, mobile-first experience.",
-    "description": "Ruedas NG is a company in charge of the wholesale and distribution of alloy wheels, offering top quality products manufactured under rigorous quality standards. They were looking to refresh the style of their website with a cleaner and more modern look, so that the user can navigate and find their products in a simpler and clearer way. They also needed to improve the mobile experience for users as it was previously non-existent.",
-    "image": "/images/projects/ruedas-ng/cover.png",
-    "externalLink": "https://ruedasng.com.ar/",
-    "tags": ["UX/UI", "Web Design", "Mobile"],
-    "featured": false
+    "year": "2025",
+    "featured": true,
+    "body": [
+      "Three people, three versions of the same knot. Plenty of back-and-forth about what mattered most — decisions made together more often than alone, always protecting the logic of the whole over the pull of any single piece.",
+      "Jon came last. A friend of Sam's, same pattern. By then it had stopped being a one-off and become a method: strong work that only needed structure to finally speak in one voice."
+    ]
   },
   {
     "id": "simplimuv",
     "slug": "simplimuv",
     "title": "SimpliMuv SaaS",
-    "summary": "A SaaS platform for dealers to centralise sales and customise motorbikes online.",
-    "description": "SimpliMuv arose as a solution for the different distributors to have a customised online shop according to the standards that the client demanded...",
-    "image": "/images/projects/simplimuv/cover.png",
+    "summary": "A multi-tenant storefront platform for KTM, Vespa, Royal Enfield and Can-Am dealers — one system, many storefronts, built from consensus instead of guesswork.",
+    "image": "/images/projects/simplimuv/cover.jpg",
     "externalLink": "https://simplimuv.com/",
     "tags": ["SaaS", "Product Design", "UX"],
-    "featured": false
+    "year": "2019",
+    "featured": false,
+    "body": [
+      "SimpliMuv started as a request from Grupo Simpa — the Argentine representative for KTM, Vespa, Royal Enfield, Can-Am and others. They didn't want a shop. They wanted every dealer to run their own store, customized to the brand they sold, all holding to one company standard. One system, many storefronts, a single set of rules underneath.",
+      "The hard part wasn't the storefront. It was that no one had settled how the thing should actually work — the flow, the structure, the taxonomies. A platform that reconfigures itself per dealer needs that skeleton fixed first, and it wasn't. So instead of inventing it alone and hoping it fit, I put the people involved in one room and ran card sorting until the structure, the flow and the categories came from consensus instead of guesswork. Then we built a prototype that looked like the real thing and tested it with dealers and actual buyers — real feedback, not assumptions.",
+      "The reference point was Toyota's dealership system. It was useful for alignment — it gave everyone a shared picture of what the thing could be — but it was external, and Simpa wanted something in-house. So the model worked to understand the goal, not to copy it. The real work was adapting that logic to motorcycles, and to how the Argentine market actually buys.",
+      "I left the company while it was still in development, with the design handoff complete. I've reviewed what got built, and as far as I know it's being implemented. The part I own is the structure — turning an undefined system into something clear enough for a team to build."
+    ]
   },
   {
-    "id": "ba-desde-adentro",
-    "slug": "ba-desde-adentro",
-    "title": "BA Desde Adentro",
-    "summary": "Internal landing page proposal for Buenos Aires city workers intranet.",
-    "description": "During the time I worked in the government of the city of Buenos Aires...",
-    "image": "/images/projects/ba-desde-adentro/cover.gif",
-    "externalLink": "https://badesdeadentro.gob.ar/",
-    "tags": ["Government", "Intranet", "UI Design"],
-    "featured": false
+    "id": "ba-taxi",
+    "slug": "ba-taxi",
+    "title": "BA Taxi",
+    "summary": "Added multi-destination trips to the City of Buenos Aires' own taxi app, built to help traditional taxis compete with Uber and Didi.",
+    "image": "/images/projects/ba-taxi/cover.png",
+    "externalLink": null,
+    "tags": ["App Design", "UX"],
+    "year": "2018",
+    "featured": false,
+    "body": [
+      "BA Taxi is the City of Buenos Aires' own taxi app — built by the city's transport department to give traditional taxis a way to compete with Uber and Didi, and give passengers a reason to choose them. The job was narrow: add one capability to the passenger app — setting more than one destination in a single trip.",
+      "A small feature, but not a free one. You can't bolt something onto an app without knowing how the app already thinks. So the work started by reading the existing product — where the origin-and-destination logic already lived — and by benchmarking the apps users already knew. The useful irony: the best references for helping taxis compete with Uber and Didi were Uber and Didi themselves. Whatever pattern users had already learned there was the pattern that would feel native here.",
+      "That's what decided placement. The feature went where people already set their route — the home screen, inside the existing \"from / to\" section — extended so one destination could become several, with no new screen and no detour. New capability, same flow.",
+      "The feature shipped. It's in the live app.",
+      "The work ended in a handoff: a Sketch spec for the dev team covering not just component states but how the interaction and the user's path through it should behave. Not a screen to copy — a behavior to build."
+    ]
   }
 ]

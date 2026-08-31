@@ -5,7 +5,8 @@ import Layout from "../components/Layout"
 function Project() {
     const { id } = useParams()
 
-    const project = projects.find(project => project.id === id)
+    const index = projects.findIndex(project => project.id === id)
+    const project = projects[index]
 
     if (!project) {
         return (
@@ -18,14 +19,18 @@ function Project() {
         )
     }
 
+    const prevProject = projects[(index - 1 + projects.length) % projects.length]
+    const nextProject = projects[(index + 1) % projects.length]
+
     return (
         <Layout>
-            <section className="pf-case__hero">
-                <h1 className="pf-case__title">{project.title}</h1>
-            </section>
-
             <div className="pf-case__grid">
                 <div className="pf-case__col-text">
+                    <div className="pf-case__title-block">
+                        <Link to="/work" className="pf-case__back">← Back to work</Link>
+                        <h1 className="pf-case__title">{project.title}</h1>
+                    </div>
+
                     <div className="pf-case__intro">
                         <p className="pf-case__summary">{project.summary}</p>
                         <div className="pf-case__tags">
@@ -33,7 +38,22 @@ function Project() {
                                 <span key={tag} className="pf-case__tag">{tag}</span>
                             ))}
                         </div>
-                        {project.externalLink && (
+                        {project.links && (
+                            <div className="pf-case__links">
+                                {project.links.map(link => (
+                                    <a
+                                        key={link.url}
+                                        href={link.url}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="pf-btn pf-case__cta"
+                                    >
+                                        {link.label} ↗
+                                    </a>
+                                ))}
+                            </div>
+                        )}
+                        {!project.links && project.externalLink && (
                             <a
                                 href={project.externalLink}
                                 target="_blank"
@@ -46,28 +66,9 @@ function Project() {
                     </div>
 
                     <section className="pf-case__section">
-                        <p className="pf-case__section-text">{project.description}</p>
-                    </section>
-
-                    <section className="pf-case__section">
-                        <h2 className="pf-case__section-heading">What made this non-trivial</h2>
-                        <p className="pf-case__section-text">
-                            <em>Placeholder — this is where the core problem and constraints go: what the client actually needed, and why the obvious solution didn't hold up.</em>
-                        </p>
-                    </section>
-
-                    <section className="pf-case__section">
-                        <h2 className="pf-case__section-heading">How it got shaped</h2>
-                        <p className="pf-case__section-text">
-                            <em>Placeholder — key decisions, trade-offs and the reasoning behind the structure of the solution.</em>
-                        </p>
-                    </section>
-
-                    <section className="pf-case__section">
-                        <h2 className="pf-case__section-heading">What shipped</h2>
-                        <p className="pf-case__section-text">
-                            <em>Placeholder — result, impact, and anything measurable worth mentioning.</em>
-                        </p>
+                        {(project.body ?? [project.description]).map((paragraph, i) => (
+                            <p key={i} className="pf-case__section-text">{paragraph}</p>
+                        ))}
                     </section>
                 </div>
 
@@ -75,12 +76,18 @@ function Project() {
                     {project.image
                         ? <img src={project.image} alt={project.title} />
                         : <div className="pf-case__image-placeholder"><span>Add image</span></div>}
+                    {project.imageNote && (
+                        <p className="pf-case__image-note">{project.imageNote}</p>
+                    )}
                 </div>
             </div>
 
             <nav className="pf-case__footer-nav">
-                <Link to="/work" className="pf-btn pf-btn--outline">
-                    ← Back to work
+                <Link to={`/project/${prevProject.id}`} className="pf-btn pf-btn--outline pf-case__prev">
+                    ← Previous: {prevProject.title}
+                </Link>
+                <Link to={`/project/${nextProject.id}`} className="pf-btn pf-case__next">
+                    Next: {nextProject.title} →
                 </Link>
             </nav>
         </Layout>
