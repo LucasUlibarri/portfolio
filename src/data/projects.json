@@ -2,91 +2,198 @@
   {
     "id": "risk-management-tool",
     "slug": "risk-management-tool",
-    "title": "Risk Management Tool",
-    "summary": "Internal risk-management platform that moved operational, compliance and third-party risk out of scattered spreadsheets and into one shared structure.",
+    "title": {
+      "en": "Risk Management Tool",
+      "es": "Herramienta de Gestión de Riesgos"
+    },
+    "summary": {
+      "en": "Internal risk-management platform that moved operational, compliance and third-party risk out of scattered spreadsheets and into one shared structure.",
+      "es": "Plataforma interna de gestión de riesgos que sacó el riesgo operacional, de compliance y de terceros de planillas dispersas y lo llevó a una estructura compartida."
+    },
     "image": "/images/projects/risk-management-tool/cover.jpg",
-    "imageNote": "Illustrative image — the actual project can't be shared publicly.",
+    "imageNote": {
+      "en": "Illustrative image — the actual project can't be shared publicly.",
+      "es": "Imagen ilustrativa — el proyecto real no puede compartirse públicamente."
+    },
     "externalLink": null,
-    "tags": ["Internal Tool", "Product Design"],
+    "tags": [
+      { "en": "Internal Tool", "es": "Herramienta Interna" },
+      { "en": "Product Design", "es": "Diseño de Producto" }
+    ],
     "year": "2024–25",
     "featured": true,
     "body": [
-      "The client was tracking risk in spreadsheets — operational, compliance, third-party — spread across areas that each worked their own way. The real problem wasn't the Excels. It was that the knowledge lived in people, not in the system. When someone left, they took the know-how with them: where things were, how the tracking worked, why a risk was logged the way it was. The tool existed to move that knowledge out of people's heads and into a structure that survives them leaving — centralized, standardized, traceable.",
-      "It was built on three verticals — operational, compliance, third-party — sharing the same instruments but customized to how each one actually managed risk. That created a real trade-off: sometimes a risk had to live in two verticals at once. We chose to duplicate rather than force it into one, because the lens each area used to read that risk was genuinely different, and flattening them would have lost the thing that made each vertical worth separating.",
-      "Underneath, most relationships were many-to-many by design — a risk could link to any number of controls, action plans and incidents, and a single control could cover many risks. The one deliberate exception was assessment: a risk under evaluation freezes. It can't be modified or pulled into a second assessment while one is open. Everything else stays fluid; the thing being measured holds still. That rule is what keeps an evaluation meaning something instead of shifting under its own feet.",
-      "The platform worked at two scales. Analysts were the center of gravity — loading risks, configuring, managing the day-to-day. Managers sat above as super-users: running risk assessments, judging how controls were actually performing, reading the general picture through dashboards and filters. We never built the clean manager-only overview we'd imagined, because managers also needed edit access, and the exclusive view couldn't hold both. The overview stayed simpler than the ambition.",
-      "Most of the work wasn't screens. It was understanding how each area operated and where their processes genuinely differed versus where they'd just drifted apart — then unifying that into one standard without erasing the differences that mattered. It's still being developed, with a genuinely strong dev team; we were in from the early stages, iterating instruments together and doing design QA while it ran in the dev environment. The part I own is the structure — turning a room full of person-dependent spreadsheets into a system a team could build on."
+      {
+        "en": "The client was tracking risk in spreadsheets (operational, compliance, third-party) spread across areas that each worked their own way. The real problem wasn't the Excels. It was that the knowledge lived in people, not in the system. When someone left, they took the know-how with them: where things were, how the tracking worked, why a risk was logged the way it was. The tool existed to move that knowledge out of people's heads and into a structure that survives them leaving: centralized, standardized, traceable.",
+        "es": "El cliente rastreaba el riesgo en planillas (operacional, compliance, de terceros) repartidas entre áreas que cada una trabajaba a su manera. El problema real no eran los Excels. Era que el conocimiento vivía en las personas, no en el sistema. Cuando alguien se iba, se llevaba el know-how con él: dónde estaba cada cosa, cómo funcionaba el seguimiento, por qué un riesgo se había registrado de determinada forma. La herramienta existió para sacar ese conocimiento de la cabeza de las personas y llevarlo a una estructura que sobrevive a que se vayan: centralizada, estandarizada, trazable."
+      },
+      {
+        "en": "It was built on three verticals: operational, compliance, third-party. Sharing the same instruments but customized to how each one actually managed risk. That created a real trade-off: sometimes a risk had to live in two verticals at once. We chose to duplicate rather than force it into one, because the lens each area used to read that risk was genuinely different, and flattening them would have lost the thing that made each vertical worth separating.",
+        "es": "Se construyó sobre tres verticales: operacional, compliance, terceros. Compartían los mismos instrumentos pero customizados a cómo cada una gestionaba realmente el riesgo. Eso generó una tensión real: a veces un riesgo tenía que vivir en dos verticales a la vez. Elegimos duplicar en vez de forzarlo a una sola, porque la mirada que cada área usaba para leer ese riesgo era genuinamente distinta, y aplanarlas hubiera hecho perder lo que justificaba separar cada vertical."
+      },
+      {
+        "en": "Underneath, most relationships were many-to-many by design, a risk could link to any number of controls, action plans and incidents, and a single control could cover many risks. The one deliberate exception was assessment: a risk under evaluation freezes. It can't be modified or pulled into a second assessment while one is open. Everything else stays fluid; the thing being measured holds still. That rule is what keeps an evaluation meaning something instead of shifting under its own feet.",
+        "es": "Por debajo, la mayoría de las relaciones eran muchos-a-muchos por diseño, un riesgo podía vincularse a cualquier cantidad de controles, planes de acción e incidentes, y un solo control podía cubrir muchos riesgos. La única excepción deliberada era la evaluación: un riesgo en evaluación se congela. No puede modificarse ni sumarse a una segunda evaluación mientras haya una abierta. Todo lo demás permanece fluido; lo que se está midiendo se mantiene quieto. Esa regla es lo que hace que una evaluación signifique algo en vez de moverse bajo sus propios pies."
+      },
+      {
+        "en": "The platform worked at two scales. Analysts were the center of gravity: loading risks, configuring, managing the day-to-day. Managers sat above as super-users: running risk assessments, judging how controls were actually performing, reading the general picture through dashboards and filters. We never built the clean manager-only overview we'd imagined, because managers also needed edit access, and the exclusive view couldn't hold both. The overview stayed simpler than the ambition.",
+        "es": "La plataforma funcionaba en dos escalas. Los analistas eran el centro de gravedad: cargando riesgos, configurando, gestionando el día a día. Los managers estaban por encima como super-usuarios: corriendo evaluaciones de riesgo, juzgando cómo estaban funcionando realmente los controles, leyendo el panorama general a través de dashboards y filtros. Nunca llegamos a construir la vista exclusiva para managers que habíamos imaginado, porque los managers también necesitaban acceso de edición, y la vista exclusiva no podía sostener ambas cosas. El overview quedó más simple que la ambición original."
+      },
+      {
+        "en": "Most of the work wasn't screens. It was understanding how each area operated and where their processes genuinely differed versus where they'd just drifted apart, then unifying that into one standard without erasing the differences that mattered. It's still being developed, with a genuinely strong dev team; we were in from the early stages, iterating instruments together and doing design QA while it ran in the dev environment. The part I own is the structure, turning a room full of person-dependent spreadsheets into a system a team could build on.",
+        "es": "La mayor parte del trabajo no fueron pantallas. Fue entender cómo operaba cada área y dónde sus procesos realmente diferían versus dónde simplemente se habían desalineado con el tiempo, y después unificar eso en un solo estándar sin borrar las diferencias que importaban. Todavía se sigue desarrollando, con un equipo de desarrollo realmente sólido; estuvimos desde las primeras etapas, iterando instrumentos en conjunto y haciendo QA de diseño mientras corría en el ambiente de desarrollo. La parte que me pertenece es la estructura, convertir un cuarto lleno de planillas dependientes de personas en un sistema sobre el que un equipo pudiera construir."
+      }
     ]
   },
   {
     "id": "black-snake",
     "slug": "black-snake",
-    "title": "Black Snake (AUST)",
-    "summary": "A patented recovery-rope product with almost no direct competitor to benchmark against — the shop had to solve a configuration problem before it could sell anything.",
+    "title": {
+      "en": "Black Snake (AUST)",
+      "es": "Black Snake (AUST)"
+    },
+    "summary": {
+      "en": "A patented recovery-rope product with almost no direct competitor to benchmark against — the shop had to solve a configuration problem before it could sell anything.",
+      "es": "Un producto patentado de sogas de rescate con casi ningún competidor directo para tomar como referencia — la tienda tuvo que resolver un problema de configuración antes de poder vender nada."
+    },
     "image": "/images/projects/black-snake/cover.jpg",
     "externalLink": "https://www.blacksnakestrops.com/",
-    "tags": ["E-commerce", "UX Design", "UI Design"],
+    "tags": [
+      { "en": "E-commerce", "es": "E-commerce" },
+      { "en": "UX Design", "es": "Diseño UX" },
+      { "en": "UI Design", "es": "Diseño UI" }
+    ],
     "year": "2022–23",
     "featured": true,
     "body": [
-      "BlackSnake makes recovery ropes — Kevlar and nylon, built for 4x4s, agriculture, heavy industry. A patented product with almost no direct competitor to benchmark against. The brief read simple: a shop to sell direct and reach buyers the distributors never would. It wasn't simple.",
-      "The difficulty was the product itself. Every rope varies on two axes at once — length and minimum breaking strength — with price and options depending on both, and some variables that couldn't be cleanly represented at all. That's not a catalog you pour into a store template. It's a configuration problem wearing the shape of an online shop.",
-      "The client had already committed to Wix. Its standard product setup couldn't hold that logic — built for fixed variants, it broke the moment two axes had to move together. So the work went under the surface: into developer mode, rebuilding the product and configuration engine in JavaScript. Not decorating a store — reconstructing the part the platform assumed was already solved.",
-      "Honest about where it landed: the shop never fully shipped. Shipping was the last knot — cost by weight, by quantity, by how the ropes sit on a pallet — and access to the editor closed before it was resolved. What holds up is the core: a configuration system that made a stubborn product buildable on a platform that wasn't built for it."
+      {
+        "en": "BlackSnake makes recovery ropes, Kevlar and nylon, built for 4x4s, agriculture, heavy industry. A patented product with almost no direct competitor to benchmark against. The brief read simple: a shop to sell direct and reach buyers the distributors never would. It wasn't simple.",
+        "es": "BlackSnake fabrica sogas de rescate, Kevlar y nylon, pensadas para 4x4, agricultura, industria pesada. Un producto patentado con casi ningún competidor directo para tomar como referencia. El brief sonaba simple: una tienda para vender directo y llegar a compradores a los que los distribuidores nunca alcanzarían. No fue simple."
+      },
+      {
+        "en": "The difficulty was the product itself. Every rope varies on two axes at once: length and minimum breaking strength, with price and options depending on both, and some variables that couldn't be cleanly represented at all. That's not a catalog you pour into a store template. It's a configuration problem wearing the shape of an online shop.",
+        "es": "La dificultad era el producto en sí. Cada soga varía en dos ejes a la vez: largo y resistencia mínima a la rotura, con el precio y las opciones dependiendo de ambos, y algunas variables que directamente no podían representarse de forma limpia. Eso no es un catálogo que se vuelca en un template de tienda. Es un problema de configuración disfrazado de tienda online."
+      },
+      {
+        "en": "The client had already committed to Wix. Its standard product setup couldn't hold that logic, built for fixed variants, it broke the moment two axes had to move together. So the work went under the surface: into developer mode, rebuilding the product and configuration engine in JavaScript, not decorating a store but reconstructing the part the platform assumed was already solved.",
+        "es": "El cliente ya se había comprometido con Wix. Su configuración estándar de productos no podía sostener esa lógica, pensada para variantes fijas, se rompía en el momento en que dos ejes tenían que moverse juntos. Así que el trabajo se metió por debajo de la superficie: modo desarrollador, reconstruyendo el motor de productos y configuración en JavaScript, no decorar una tienda sino reconstruir la parte que la plataforma asumía como ya resuelta."
+      },
+      {
+        "en": "Honest about where it landed: the shop never fully shipped. Shipping was the last knot: cost by weight, by quantity, by how the ropes sit on a pallet, and access to the editor closed before it was resolved. What holds up is the core: a configuration system that made a stubborn product buildable on a platform that wasn't built for it.",
+        "es": "Siendo honesto sobre dónde quedó: la tienda nunca llegó a lanzarse por completo. El envío fue el último nudo por desatar: costo por peso, por cantidad, por cómo se acomodan las sogas en un pallet, y el acceso al editor se cerró antes de resolverlo. Lo que se sostiene es el núcleo: un sistema de configuración que hizo que un producto testarudo fuera construible sobre una plataforma que no estaba pensada para eso."
+      }
     ]
   },
   {
     "id": "portfolios",
     "slug": "portfolios",
-    "title": "Award-Winning Advertising Creatives",
-    "summary": "Restructured portfolios for three award-winning advertising creatives — Sam Dolphin, Nick Morrissey and Jon Kubik — shifting the focus back onto the work itself.",
+    "title": {
+      "en": "Award-Winning Advertising Creatives",
+      "es": "Creativos Publicitarios Premiados"
+    },
+    "summary": {
+      "en": "Restructured portfolios for three award-winning advertising creatives: Sam Dolphin, Nick Morrissey and Jon Kubik, shifting the focus back onto the work itself.",
+      "es": "Reestructuración de portfolios para tres creativos publicitarios premiados: Sam Dolphin, Nick Morrissey y Jon Kubik, devolviendo el foco al trabajo en sí."
+    },
     "image": "/images/projects/portfolios/cover.jpg",
     "links": [
       { "label": "Sam Dolphin", "url": "https://www.sam-dolphin.com/" },
       { "label": "Nick Morrissey", "url": "https://www.nickmorrissey.com/" },
       { "label": "Jon Kubik", "url": "https://jonkubik.com/" }
     ],
-    "tags": ["Portfolio", "Art Direction", "UX/UI"],
+    "tags": [
+      { "en": "Portfolio", "es": "Portfolio" },
+      { "en": "Art Direction", "es": "Dirección de Arte" },
+      { "en": "UX/UI", "es": "UX/UI" }
+    ],
     "year": "2025",
     "featured": true,
     "body": [
-      "Three people, three versions of the same knot. Plenty of back-and-forth about what mattered most — decisions made together more often than alone, always protecting the logic of the whole over the pull of any single piece.",
-      "Jon came last. A friend of Sam's, same pattern. By then it had stopped being a one-off and become a method: strong work that only needed structure to finally speak in one voice."
+      {
+        "en": "Three people, three versions of the same knot. Plenty of back-and-forth about what mattered most, decisions made together more often than alone, always protecting the logic of the whole over the pull of any single piece.",
+        "es": "Tres personas, tres versiones del mismo nudo. Mucho ida y vuelta sobre qué era lo que más importaba, decisiones tomadas en conjunto más veces que solas, protegiendo siempre la lógica del conjunto por sobre el atractivo de una pieza individual."
+      }
     ]
   },
   {
     "id": "simplimuv",
     "slug": "simplimuv",
-    "title": "SimpliMuv SaaS",
-    "summary": "A multi-tenant storefront platform for KTM, Vespa, Royal Enfield and Can-Am dealers — one system, many storefronts, built from consensus instead of guesswork.",
+    "title": {
+      "en": "SimpliMuv SaaS",
+      "es": "SimpliMuv SaaS"
+    },
+    "summary": {
+      "en": "A multi-tenant storefront platform for KTM, Vespa, Royal Enfield and Can-Am dealers — one system, many storefronts, built from consensus instead of guesswork.",
+      "es": "Una plataforma multi-tenant de tiendas para concesionarios de KTM, Vespa, Royal Enfield y Can-Am — un solo sistema, muchas tiendas, construido a partir de consenso y no de suposiciones."
+    },
     "image": "/images/projects/simplimuv/cover.jpg",
     "externalLink": "https://simplimuv.com/",
-    "tags": ["SaaS", "Product Design", "UX"],
+    "tags": [
+      { "en": "SaaS", "es": "SaaS" },
+      { "en": "Product Design", "es": "Diseño de Producto" },
+      { "en": "UX", "es": "UX" }
+    ],
     "year": "2019",
     "featured": false,
     "body": [
-      "SimpliMuv started as a request from Grupo Simpa — the Argentine representative for KTM, Vespa, Royal Enfield, Can-Am and others. They didn't want a shop. They wanted every dealer to run their own store, customized to the brand they sold, all holding to one company standard. One system, many storefronts, a single set of rules underneath.",
-      "The hard part wasn't the storefront. It was that no one had settled how the thing should actually work — the flow, the structure, the taxonomies. A platform that reconfigures itself per dealer needs that skeleton fixed first, and it wasn't. So instead of inventing it alone and hoping it fit, I put the people involved in one room and ran card sorting until the structure, the flow and the categories came from consensus instead of guesswork. Then we built a prototype that looked like the real thing and tested it with dealers and actual buyers — real feedback, not assumptions.",
-      "The reference point was Toyota's dealership system. It was useful for alignment — it gave everyone a shared picture of what the thing could be — but it was external, and Simpa wanted something in-house. So the model worked to understand the goal, not to copy it. The real work was adapting that logic to motorcycles, and to how the Argentine market actually buys.",
-      "I left the company while it was still in development, with the design handoff complete. I've reviewed what got built, and as far as I know it's being implemented. The part I own is the structure — turning an undefined system into something clear enough for a team to build."
+      {
+        "en": "SimpliMuv started as a request from Grupo Simpa — the Argentine representative for KTM, Vespa, Royal Enfield, Can-Am and others. They didn't want a shop. They wanted every dealer to run their own store, customized to the brand they sold, all holding to one company standard. One system, many storefronts, a single set of rules underneath.",
+        "es": "SimpliMuv empezó como un pedido de Grupo Simpa — el representante argentino de KTM, Vespa, Royal Enfield, Can-Am y otras marcas. No querían una tienda. Querían que cada concesionario tuviera su propia tienda, customizada a la marca que vendía, todas sosteniendo un mismo estándar de la empresa. Un sistema, muchas tiendas, un único conjunto de reglas por debajo."
+      },
+      {
+        "en": "The hard part wasn't the storefront. It was that no one had settled how the thing should actually work — the flow, the structure, the taxonomies. A platform that reconfigures itself per dealer needs that skeleton fixed first, and it wasn't. So instead of inventing it alone and hoping it fit, I put the people involved in one room and ran card sorting until the structure, the flow and the categories came from consensus instead of guesswork. Then we built a prototype that looked like the real thing and tested it with dealers and actual buyers — real feedback, not assumptions.",
+        "es": "Lo difícil no era la tienda en sí. Era que nadie había definido cómo debía funcionar realmente el sistema — el flujo, la estructura, las taxonomías. Una plataforma que se reconfigura por concesionario necesita ese esqueleto resuelto primero, y no lo estaba. Entonces, en vez de inventarlo solo y esperar que encajara, junté a la gente involucrada en una misma sala y corrimos card sorting hasta que la estructura, el flujo y las categorías surgieron del consenso y no de suposiciones. Después construimos un prototipo que se sentía como lo real y lo testeamos con concesionarios y compradores reales — feedback genuino, no hipótesis."
+      },
+      {
+        "en": "The reference point was Toyota's dealership system. It was useful for alignment — it gave everyone a shared picture of what the thing could be — but it was external, and Simpa wanted something in-house. So the model worked to understand the goal, not to copy it. The real work was adapting that logic to motorcycles, and to how the Argentine market actually buys.",
+        "es": "El punto de referencia fue el sistema de concesionarios de Toyota. Sirvió para alinear — le dio a todos una imagen compartida de lo que podía llegar a ser — pero era externo, y Simpa quería algo propio. Entonces el modelo se usó para entender el objetivo, no para copiarlo. El trabajo real fue adaptar esa lógica a las motos, y a cómo compra realmente el mercado argentino."
+      },
+      {
+        "en": "I left the company while it was still in development, with the design handoff complete. I've reviewed what got built, and as far as I know it's being implemented. The part I own is the structure — turning an undefined system into something clear enough for a team to build.",
+        "es": "Dejé la empresa mientras el proyecto todavía estaba en desarrollo, con el handoff de diseño completo. Revisé lo que se construyó, y hasta donde sé se sigue implementando. La parte que me pertenece es la estructura — convertir un sistema indefinido en algo lo suficientemente claro como para que un equipo lo construya."
+      }
     ]
   },
   {
     "id": "ba-taxi",
     "slug": "ba-taxi",
-    "title": "BA Taxi",
-    "summary": "Added multi-destination trips to the City of Buenos Aires' own taxi app, built to help traditional taxis compete with Uber and Didi.",
+    "title": {
+      "en": "BA Taxi",
+      "es": "BA Taxi"
+    },
+    "summary": {
+      "en": "Added multi-destination trips to the City of Buenos Aires' own taxi app, built to help traditional taxis compete with Uber and Didi.",
+      "es": "Suma de viajes con múltiples destinos a la app de taxis propia de la Ciudad de Buenos Aires, creada para ayudar a los taxis tradicionales a competir con Uber y Didi."
+    },
     "image": "/images/projects/ba-taxi/cover.png",
     "externalLink": null,
-    "tags": ["App Design", "UX"],
+    "tags": [
+      { "en": "App Design", "es": "Diseño de App" },
+      { "en": "UX", "es": "UX" }
+    ],
     "year": "2018",
     "featured": false,
     "body": [
-      "BA Taxi is the City of Buenos Aires' own taxi app — built by the city's transport department to give traditional taxis a way to compete with Uber and Didi, and give passengers a reason to choose them. The job was narrow: add one capability to the passenger app — setting more than one destination in a single trip.",
-      "A small feature, but not a free one. You can't bolt something onto an app without knowing how the app already thinks. So the work started by reading the existing product — where the origin-and-destination logic already lived — and by benchmarking the apps users already knew. The useful irony: the best references for helping taxis compete with Uber and Didi were Uber and Didi themselves. Whatever pattern users had already learned there was the pattern that would feel native here.",
-      "That's what decided placement. The feature went where people already set their route — the home screen, inside the existing \"from / to\" section — extended so one destination could become several, with no new screen and no detour. New capability, same flow.",
-      "The feature shipped. It's in the live app.",
-      "The work ended in a handoff: a Sketch spec for the dev team covering not just component states but how the interaction and the user's path through it should behave. Not a screen to copy — a behavior to build."
+      {
+        "en": "BA Taxi is the City of Buenos Aires' own taxi app, built by the city's transport department to give traditional taxis a way to compete with Uber and Didi, and give passengers a reason to choose them. The job was narrow: add one capability to the passenger app, setting more than one destination in a single trip.",
+        "es": "BA Taxi es la app de taxis propia de la Ciudad de Buenos Aires, construida por el área de transporte de la ciudad para darles a los taxis tradicionales una forma de competir con Uber y Didi, y darles a los pasajeros un motivo para elegirlos. El encargo era acotado: sumar una sola capacidad a la app de pasajeros, poder fijar más de un destino en un mismo viaje."
+      },
+      {
+        "en": "A small feature, but not a free one. You can't bolt something onto an app without knowing how the app already thinks. So the work started by reading the existing product, where the origin-and-destination logic already lived and by benchmarking the apps users already knew. The useful irony: the best references for helping taxis compete with Uber and Didi were Uber and Didi themselves. Whatever pattern users had already learned there was the pattern that would feel native here.",
+        "es": "Una feature chica, pero no gratuita. No se puede sumar algo a una app sin saber cómo piensa esa app hoy. Así que el trabajo empezó leyendo el producto existente, dónde vivía ya la lógica de origen y destino, y benchmarkeando las apps que los usuarios ya conocían. La ironía útil: las mejores referencias para ayudar a los taxis a competir con Uber y Didi eran el propio Uber y Didi. Cualquier patrón que los usuarios ya hubieran aprendido ahí era el patrón que se sentiría nativo acá."
+      },
+      {
+        "en": "That's what decided placement. The feature went where people already set their route: the home screen, inside the existing \"from / to\" section, extended so one destination could become several, with no new screen and no detour. New capability, same flow.",
+        "es": "Eso fue lo que definió la ubicación. La feature se colocó donde la gente ya definía su ruta: la pantalla principal, dentro de la sección existente \"desde / hasta\", extendida para que un destino pudiera convertirse en varios, sin pantalla nueva y sin desvíos. Capacidad nueva, mismo flujo."
+      },
+      {
+        "en": "The feature shipped. It's in the live app.",
+        "es": "La feature se lanzó. Está en la app en producción."
+      },
+      {
+        "en": "The work ended in a handoff: a Sketch spec for the dev team covering not just component states but how the interaction and the user's path through it should behave. Not a screen to copy but a behavior to build.",
+        "es": "El trabajo terminó en un handoff: una spec en Sketch para el equipo de desarrollo que cubría no solo los estados de los componentes, sino cómo debía comportarse la interacción y el recorrido del usuario. No una pantalla para copiar sino un comportamiento para construir."
+      }
     ]
   }
 ]

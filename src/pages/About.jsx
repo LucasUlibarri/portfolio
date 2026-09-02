@@ -2,6 +2,8 @@ import Layout from "../components/Layout"
 import experience from "../data/experience.json"
 import photography from "../data/photography.json"
 import experiments from "../data/experiments.json"
+import { useLanguage } from "../i18n/useLanguage"
+import renderMultiline from "../i18n/renderMultiline"
 
 // AI Projects section is hidden for now (see below) — swap in the real repo
 // URLs/titles here and un-comment both this and the section when ready.
@@ -10,7 +12,13 @@ import experiments from "../data/experiments.json"
 //   { title: "AI Project #2 — add repo", description: "Another one built to mess around and see what sticks. Repo link goes here." },
 // ]
 
+const cvFiles = {
+  en: '/assets/cv/Lucas-Ulibarri-CV-EN.pdf',
+  es: '/assets/cv/Lucas-Ulibarri-CV-ES.pdf',
+}
+
 function About() {
+  const { t, pick, language } = useLanguage()
   const sortedExperience = [...experience].sort(
     (a, b) => b.startYear - a.startYear
   )
@@ -20,53 +28,49 @@ function About() {
       <section className="pf-about" id="about">
         <div>
           <h1 className="pf-about__heading">
-            Bridging design<br />and code since 2017.
+            {renderMultiline(t('about.heading'))}
           </h1>
           <p className="pf-about__body">
-            I work across design, product thinking and implementation. Over time I became less interested in how things look and more interested in how they work — and why they often don't.
-            <br /><br />
-            I'm drawn to early-stage work: the kind of projects where the problem isn't fully defined yet and the direction is still being shaped. That ambiguity is where I find the most interesting work to do.
-            <br /><br />
-            Based in Buenos Aires. Working with teams remotely and locally.
+            {renderMultiline(t('about.body'))}
           </p>
           <a
-            href="/assets/cv/Lucas-Ulibarri-CV.pdf"
+            href={cvFiles[language]}
             target="_blank"
             rel="noopener noreferrer"
             className="pf-btn pf-about__cta"
           >
-            Download CV ↗
+            {t('about.downloadCv')}
           </a>
         </div>
         <aside className="pf-about__sidebar">
           <div className="pf-about__datum">
-            <p className="pf-about__datum-label">Based in</p>
-            <p className="pf-about__datum-value">Buenos Aires, Argentina</p>
+            <p className="pf-about__datum-label">{t('about.sidebar.basedInLabel')}</p>
+            <p className="pf-about__datum-value">{t('about.sidebar.basedInValue')}</p>
           </div>
           <div className="pf-about__datum">
-            <p className="pf-about__datum-label">Status</p>
-            <p className="pf-about__datum-value">Available for freelance</p>
+            <p className="pf-about__datum-label">{t('about.sidebar.statusLabel')}</p>
+            <p className="pf-about__datum-value">{t('about.sidebar.statusValue')}</p>
           </div>
           <div className="pf-about__datum">
-            <p className="pf-about__datum-label">Focus</p>
-            <p className="pf-about__datum-value">Product Design, Web Dev</p>
+            <p className="pf-about__datum-label">{t('about.sidebar.focusLabel')}</p>
+            <p className="pf-about__datum-value">{t('about.sidebar.focusValue')}</p>
           </div>
           <div className="pf-about__datum">
-            <p className="pf-about__datum-label">Languages</p>
-            <p className="pf-about__datum-value">Spanish (native) · English (fluent) · French (learning)</p>
+            <p className="pf-about__datum-label">{t('about.sidebar.languagesLabel')}</p>
+            <p className="pf-about__datum-value">{t('about.sidebar.languagesValue')}</p>
           </div>
         </aside>
       </section>
 
       <section className="pf-experience">
-        <h2 className="pf-experience__heading">Experience</h2>
+        <h2 className="pf-experience__heading">{t('about.experienceHeading')}</h2>
         <div className="pf-experience__cols">
           {sortedExperience.map(item => (
             <div key={item.id} className="pf-experience__item">
               <p className="pf-experience__period">{item.period}</p>
               <p className="pf-experience__company">{item.company}</p>
-              <p className="pf-experience__role">{item.role}</p>
-              <p className="pf-experience__desc">{item.description}</p>
+              <p className="pf-experience__role">{pick(item.role)}</p>
+              <p className="pf-experience__desc">{pick(item.description)}</p>
             </div>
           ))}
         </div>
@@ -74,9 +78,9 @@ function About() {
 
       <section className="pf-playground" id="passion-projects">
         <div className="pf-playground__header">
-          <h2 className="pf-playground__heading">Passion Projects</h2>
+          <h2 className="pf-playground__heading">{t('about.playgroundHeading')}</h2>
           <p className="pf-playground__intro">
-            Outside of client work — analog photography I'm learning to shoot and develop, small front-end experiments, and a couple of apps I've been building with AI.
+            {t('about.playgroundIntro')}
           </p>
         </div>
 
@@ -92,19 +96,19 @@ function About() {
         </div>
         */}
 
-        <p className="pf-playground__group-label">Photography</p>
+        <p className="pf-playground__group-label">{t('about.photographyLabel')}</p>
         <div className="pf-playground__photos">
           {photography.map(photo => (
             <div key={photo.id} className="pf-playground__photo">
-              <img src={photo.src} alt={photo.alt} loading="lazy" />
-              <p className="pf-playground__experiment-title">{photo.alt}</p>
+              <img src={photo.src} alt={pick(photo.alt)} loading="lazy" />
+              <p className="pf-playground__experiment-title">{pick(photo.alt)}</p>
             </div>
           ))}
         </div>
 
-        <p className="pf-playground__group-label">Experiments</p>
+        <p className="pf-playground__group-label">{t('about.experimentsLabel')}</p>
         <div className="pf-playground__experiments">
-          {experiments.map(({ id, url, image, alt, title }) => (
+          {experiments.map(({ id, url, image, title }) => (
             <a
               key={id}
               href={url}
@@ -112,8 +116,8 @@ function About() {
               rel="noopener noreferrer"
               className="pf-playground__experiment"
             >
-              <img src={image} alt={alt || title} loading="lazy" />
-              <p className="pf-playground__experiment-title">{title}</p>
+              <img src={image} alt={pick(title)} loading="lazy" />
+              <p className="pf-playground__experiment-title">{pick(title)}</p>
             </a>
           ))}
         </div>

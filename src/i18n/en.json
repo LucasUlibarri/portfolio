@@ -1,0 +1,96 @@
+{
+  "nav": {
+    "home": "Home",
+    "work": "Work",
+    "about": "About"
+  },
+  "hero": {
+    "heading": "Turning messy ideas\ninto real products",
+    "sub": "I work with founders and teams to turn loose ideas into products that feel clear, usable and ready to build.",
+    "available": "Available for new projects"
+  },
+  "selectedWork": {
+    "heading": "Selected Work",
+    "more": "See more ↗"
+  },
+  "process": {
+    "thinkingText": "Most products don't fail because of design, they fail because ideas never become clear enough to execute.",
+    "thinkingSub": "I enjoy the early stages: the messy conversations, loose ideas and undefined directions. That stage where things exist conceptually, but not yet clearly enough to build.\n\nMy job is to reduce the noise. Find what actually matters. Shape something that gives the team a clear direction to move toward. Not to remove exploration, but to give it direction.",
+    "whatIDoHeading": "What I do",
+    "howIWorkHeading": "How I work",
+    "whatIDo": [
+      {
+        "title": "Product Design",
+        "text": "From early-stage concepts to structured systems. I help teams define priorities, shape direction and design products that are clear enough to build."
+      },
+      {
+        "title": "Web Design & Build",
+        "text": "Product-oriented websites designed and built with structure in mind. Not just visual execution — experiences that communicate thinking."
+      },
+      {
+        "title": "Internal Tools & Systems",
+        "text": "Interfaces for complex internal workflows. I design systems that reduce friction and help teams work with clarity."
+      }
+    ],
+    "howIWork": [
+      {
+        "title": "Understand the context",
+        "text": "Before anything else, I try to understand the actual problem. Not the symptom — the underlying situation, the constraints and what success would actually look like."
+      },
+      {
+        "title": "Find what actually matters",
+        "text": "Most projects have too many priorities. I work to identify what's essential and what's noise — so the team can move with focus instead of spreading thin."
+      },
+      {
+        "title": "Shape the system",
+        "text": "Once direction is clear, I design the structure. Not just screens — the logic, hierarchy and flow that makes the product coherent from the inside out."
+      },
+      {
+        "title": "Align and move forward",
+        "text": "Design only works if it lands well. I stay close to implementation and make sure decisions are understood, shared and ready to execute."
+      }
+    ]
+  },
+  "contact": {
+    "heading": "Have something\nworth building?",
+    "sub": "If you're working on something early-stage and could use a clear head, reach out.",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  },
+  "footer": {
+    "copyright": "© 2026 Lucas Ulibarri"
+  },
+  "work": {
+    "heading": "Projects"
+  },
+  "about": {
+    "heading": "Bridging design\nand code since 2017.",
+    "body": "I work across design, product thinking and implementation. Over time I became less interested in how things look and more interested in how they work and why they often don't.\n\nI'm drawn to early-stage work: the kind of projects where the problem isn't fully defined yet and the direction is still being shaped. That ambiguity is where I find the most interesting work to do.\n\nBased in Buenos Aires. Working with teams remotely and locally.",
+    "downloadCv": "Download CV ↗",
+    "sidebar": {
+      "basedInLabel": "Based in",
+      "basedInValue": "Buenos Aires, Argentina",
+      "statusLabel": "Status",
+      "statusValue": "Available for freelance",
+      "focusLabel": "Focus",
+      "focusValue": "Product Design, Web Dev",
+      "languagesLabel": "Languages",
+      "languagesValue": "Spanish (native) · English (fluent) · French (learning)"
+    },
+    "experienceHeading": "Experience",
+    "playgroundHeading": "Passion Projects",
+    "playgroundIntro": "Outside of client work, I'm learning to shoot and develop analog photography, small front-end experiments, and a couple of apps I've been building with AI.",
+    "photographyLabel": "Photography",
+    "experimentsLabel": "Experiments"
+  },
+  "project": {
+    "notFound": "This project doesn't exist.",
+    "backToWork": "Back to work ↗",
+    "backToWorkShort": "← Back to work",
+    "visitLiveSite": "Visit live site ↗",
+    "addImagePlaceholder": "Add image",
+    "previous": "← Previous: ",
+    "next": "Next: "
+  }
+}

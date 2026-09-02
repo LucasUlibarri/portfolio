@@ -2,55 +2,73 @@
   {
     "id": 1,
     "company": "Buenos Aires City Government",
-    "role": "UI Designer",
+    "role": { "en": "UI Designer", "es": "Diseñador UI" },
     "period": "2017-2019",
     "startYear": 2017,
     "endYear": 2019,
-    "description": "Part of the UX team focused on improving digital experiences for city residents. I worked on UI systems, design proposals, component testing and alignment with established design guidelines."
+    "description": {
+      "en": "Part of the UX team focused on improving digital experiences for city residents. I worked on UI systems, design proposals, component testing and alignment with established design guidelines.",
+      "es": "Parte del equipo de UX enfocado en mejorar las experiencias digitales para los vecinos de la ciudad. Trabajé en sistemas de UI, propuestas de diseño, testing de componentes y alineación con los lineamientos de diseño establecidos."
+    }
   },
   {
     "id": 2,
     "company": "SimpliCar",
-    "role": "UX/UI Designer",
+    "role": { "en": "UX/UI Designer", "es": "Diseñador UX/UI" },
     "period": "2019",
     "startYear": 2019,
     "endYear": 2019,
-    "description": "SimpliCar provides digital solutions in the automotive sector. I led research, design, prototyping and testing of a SaaS for motorbike dealers to centralise sales and improve user access to full catalogues."
+    "description": {
+      "en": "SimpliCar provides digital solutions in the automotive sector. I led research, design, prototyping and testing of a SaaS for motorbike dealers to centralise sales and improve user access to full catalogues.",
+      "es": "SimpliCar ofrece soluciones digitales en el sector automotor. Lideré la investigación, diseño, prototipado y testing de un SaaS para concesionarios de motos, pensado para centralizar las ventas y mejorar el acceso de los usuarios a catálogos completos."
+    }
   },
   {
     "id": 3,
     "company": "Grant Group",
-    "role": "UX/UI Designer and Web Developer",
+    "role": { "en": "UX/UI Designer and Web Developer", "es": "Diseñador UX/UI y Desarrollador Web" },
     "period": "2020-2021",
     "startYear": 2020,
     "endYear": 2021,
-    "description": "Grant Group is a startup based in Perth with projects in real estate, mining, cleaning services and skincare. Design across multiple products and industries within a startup environment — adapting quickly to different business contexts to create more consistent experiences across sub-brands, including ACOR Bookkeeping Solutions."
+    "description": {
+      "en": "Grant Group is a startup based in Perth with projects in real estate, mining, cleaning services and skincare. Design across multiple products and industries within a startup environment, adapting quickly to different business contexts to create more consistent experiences across sub-brands, including ACOR Bookkeeping Solutions.",
+      "es": "Grant Group es una startup con base en Perth con proyectos en real estate, minería, servicios de limpieza y cuidado de la piel. Diseño a través de múltiples productos e industrias dentro de un entorno startup, adaptándome rápido a distintos contextos de negocio para crear experiencias más consistentes entre submarcas, incluyendo ACOR Bookkeeping Solutions."
+    }
   },
   {
     "id": 4,
     "company": "Black Snake (AUST)",
-    "role": "UX/UI Designer and Web Developer",
+    "role": { "en": "UX/UI Designer and Web Developer", "es": "Diseñador UX/UI y Desarrollador Web" },
     "period": "2021-2022",
     "startYear": 2021,
     "endYear": 2022,
-    "description": "BlackSnake (AUST) is a Melbourne-based company that manufactures recovery ropes for industries such as mining, 4x4, military and agricultural. Custom e-commerce experience for a highly specialized industrial product — standard patterns didn't work, so I designed a configuration system from scratch."
+    "description": {
+      "en": "BlackSnake (AUST) is a Melbourne-based company that manufactures recovery ropes for industries such as mining, 4x4, military and agricultural. Custom e-commerce experience for a highly specialized industrial product where standard patterns didn't work, so I designed a configuration system from scratch.",
+      "es": "BlackSnake (AUST) es una empresa con base en Melbourne que fabrica sogas de rescate para industrias como minería, 4x4, militar y agrícola. Experiencia de e-commerce a medida para un producto industrial altamente especializado donde los patrones estándar no funcionaban, así que diseñé un sistema de configuración desde cero."
+    }
   },
   {
     "id": 5,
     "company": "Alphesda Interactive",
-    "role": "UX/UI Designer and Web Developer",
+    "role": { "en": "UX/UI Designer and Web Developer", "es": "Diseñador UX/UI y Desarrollador Web" },
     "period": "2022-2023",
     "startYear": 2022,
     "endYear": 2023,
-    "description": "Alphesda is a Melbourne-based agency dedicated to providing digital solutions to their clients, offering design, development, maintenance and enhancement of their websites in order to have a greater reach and engagement with their clients. My responsibilities included the creation of pages and components on client sites, development using HTML, CSS, JavaScript, WordPress and Wix, adjustments to existing components and direct communication with clients."
+    "description": {
+      "en": "Alphesda is a Melbourne-based agency dedicated to providing digital solutions to their clients, offering design, development, maintenance and enhancement of their websites in order to have a greater reach and engagement with their clients. My responsibilities included the creation of pages and components on client sites, development using HTML, CSS, JavaScript, WordPress and Wix, adjustments to existing components and direct communication with clients.",
+      "es": "Alphesda es una agencia con base en Melbourne dedicada a brindar soluciones digitales a sus clientes, ofreciendo diseño, desarrollo, mantenimiento y mejora de sus sitios web para lograr mayor alcance y engagement con sus clientes. Mis responsabilidades incluyeron la creación de páginas y componentes en sitios de clientes, desarrollo usando HTML, CSS, JavaScript, WordPress y Wix, ajustes sobre componentes existentes y comunicación directa con clientes."
+    }
   },
   {
     "id": 6,
     "company": "Accenture Argentina",
-    "role": "Digital Product Design Specialist",
+    "role": { "en": "Digital Product Design Specialist", "es": "Digital Product Design Specialist" },
     "period": "2024-Present",
     "startYear": 2024,
     "endYear": 2026,
-    "description": "Full-time, hybrid, based in Buenos Aires. Started as Product Designer | Design Experience Senior Analyst and was promoted to Digital Product Design Specialist."
+    "description": {
+      "en": "Full-time, hybrid, based in Buenos Aires. Started as Product Designer | Design Experience Senior Analyst and was promoted to Digital Product Design Specialist.",
+      "es": "Full-time, híbrido, con base en Buenos Aires. Empecé como Product Designer | Design Experience Senior Analyst y fui promovido a Digital Product Design Specialist."
+    }
   }
 ]

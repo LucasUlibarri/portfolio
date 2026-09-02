@@ -1,16 +1,20 @@
+import { useLanguage } from '../../i18n/useLanguage'
+import renderMultiline from '../../i18n/renderMultiline'
+
 function Hero() {
+  const { t } = useLanguage()
   return (
     <section className="pf-hero">
       <div className="pf-hero__panel">
         <h1 className="pf-hero__heading">
-          Turning messy ideas<br />into real products.
+          {renderMultiline(t('hero.heading'))}
         </h1>
         <p className="pf-hero__sub">
-          I work with founders and teams to turn loose ideas into products that feel clear, usable and ready to build.
+          {t('hero.sub')}
         </p>
         <span className="pf-hero__available">
           <span className="pf-hero__dot" />
-          Available for new projects
+          {t('hero.available')}
         </span>
       </div>
     </section>

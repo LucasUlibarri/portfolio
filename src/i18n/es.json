@@ -1,0 +1,96 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "work": "Proyectos",
+    "about": "Sobre mí"
+  },
+  "hero": {
+    "heading": "Convirtiendo ideas\ndesordenadas en productos reales",
+    "sub": "Trabajo con founders y equipos para convertir ideas sueltas en productos claros, usables y listos para construirse.",
+    "available": "Disponible para nuevos proyectos"
+  },
+  "selectedWork": {
+    "heading": "Trabajo Seleccionado",
+    "more": "Ver más ↗"
+  },
+  "process": {
+    "thinkingText": "La mayoría de los productos no fallan por el diseño, fallan porque las ideas nunca llegan a estar lo suficientemente claras como para ejecutarse.",
+    "thinkingSub": "Disfruto las primeras etapas: las conversaciones desordenadas, las ideas sueltas y las direcciones sin definir. Esa etapa donde las cosas existen conceptualmente, pero todavía no con la claridad necesaria para construirse.\n\nMi trabajo es reducir el ruido. Encontrar lo que realmente importa. Darle forma a algo que le dé al equipo una dirección clara hacia dónde avanzar. No se trata de eliminar la exploración, sino de darle rumbo.",
+    "whatIDoHeading": "Qué hago",
+    "howIWorkHeading": "Cómo trabajo",
+    "whatIDo": [
+      {
+        "title": "Diseño de Producto",
+        "text": "Desde conceptos en etapa temprana hasta sistemas estructurados. Ayudo a los equipos a definir prioridades, dar forma a la dirección y diseñar productos lo suficientemente claros como para construirse."
+      },
+      {
+        "title": "Diseño y Desarrollo Web",
+        "text": "Sitios web orientados a producto, diseñados y construidos pensando en la estructura. No es solo ejecución visual — son experiencias que comunican una forma de pensar."
+      },
+      {
+        "title": "Herramientas y Sistemas Internos",
+        "text": "Interfaces para flujos de trabajo internos complejos. Diseño sistemas que reducen la fricción y ayudan a los equipos a trabajar con claridad."
+      }
+    ],
+    "howIWork": [
+      {
+        "title": "Entender el contexto",
+        "text": "Antes que nada, intento entender el problema real. No el síntoma — la situación de fondo, las restricciones y cómo se vería realmente el éxito."
+      },
+      {
+        "title": "Encontrar lo que realmente importa",
+        "text": "La mayoría de los proyectos tienen demasiadas prioridades. Trabajo para identificar qué es esencial y qué es ruido — para que el equipo pueda avanzar con foco en vez de dispersarse."
+      },
+      {
+        "title": "Dar forma al sistema",
+        "text": "Una vez que la dirección está clara, diseño la estructura. No solo pantallas — la lógica, la jerarquía y el flujo que hacen que el producto sea coherente de adentro hacia afuera."
+      },
+      {
+        "title": "Alinear y avanzar",
+        "text": "El diseño solo funciona si aterriza bien. Me mantengo cerca de la implementación y me aseguro de que las decisiones se entiendan, se compartan y estén listas para ejecutarse."
+      }
+    ]
+  },
+  "contact": {
+    "heading": "¿Tenés algo\nque quieras construir?",
+    "sub": "Si estás trabajando en algo en etapa temprana y te vendría bien una cabeza clara, escribime.",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  },
+  "footer": {
+    "copyright": "© 2026 Lucas Ulibarri"
+  },
+  "work": {
+    "heading": "Proyectos"
+  },
+  "about": {
+    "heading": "Uniendo diseño\ny código desde 2017.",
+    "body": "Trabajo entre el diseño, el pensamiento de producto y la implementación. Con el tiempo me fui interesando menos en cómo se ven las cosas y más en cómo funcionan y por qué muchas veces no lo hacen.\n\nMe atrae el trabajo en etapa temprana: el tipo de proyectos donde el problema todavía no está del todo definido y la dirección se sigue moldeando. Esa ambigüedad es donde encuentro el trabajo más interesante para hacer.\n\nRadicado en Buenos Aires. Trabajo con equipos de forma remota y local.",
+    "downloadCv": "Descargar CV ↗",
+    "sidebar": {
+      "basedInLabel": "Radicado en",
+      "basedInValue": "Buenos Aires, Argentina",
+      "statusLabel": "Estado",
+      "statusValue": "Disponible para freelance",
+      "focusLabel": "Enfoque",
+      "focusValue": "Diseño de Producto, Desarrollo Web",
+      "languagesLabel": "Idiomas",
+      "languagesValue": "Español (nativo) · Inglés (fluido) · Francés (aprendiendo)"
+    },
+    "experienceHeading": "Experiencia",
+    "playgroundHeading": "Proyectos Personales",
+    "playgroundIntro": "Fuera del trabajo con clientes, estoy aprendiendo a tomar y revelar fotografía analógica, pequeños experimentos de front-end, y un par de apps que vengo construyendo con IA.",
+    "photographyLabel": "Fotografía",
+    "experimentsLabel": "Experimentos"
+  },
+  "project": {
+    "notFound": "Este proyecto no existe.",
+    "backToWork": "Volver a proyectos ↗",
+    "backToWorkShort": "← Volver a proyectos",
+    "visitLiveSite": "Visitar sitio en vivo ↗",
+    "addImagePlaceholder": "Agregar imagen",
+    "previous": "← Anterior: ",
+    "next": "Siguiente: "
+  }
+}

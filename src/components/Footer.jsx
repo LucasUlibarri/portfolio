@@ -1,7 +1,10 @@
+import { useLanguage } from '../i18n/useLanguage'
+
 function Footer() {
+  const { t } = useLanguage()
   return (
     <footer className="pf-footer">
-      <span>© 2026 Lucas Ulibarri</span>
+      <span>{t('footer.copyright')}</span>
     </footer>
   )
 }

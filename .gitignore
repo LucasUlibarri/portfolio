@@ -27,7 +27,6 @@ dist-ssr
 
 # Planning docs (personal notes, not for the repo)
 docs/v3-planning/
-resources
 
 # Third-party agent skills installed via `npx skills add` (not project code)
 .agents/

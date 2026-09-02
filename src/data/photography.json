@@ -2,41 +2,41 @@
   {
     "id": 1,
     "src": "/images/play/roma-01.jpg",
-    "alt": "Street in Termini, Rome, 2024."
+    "alt": { "en": "Street in Termini, Rome, 2024.", "es": "Calle en Termini, Roma, 2024." }
   },
   {
     "id": 2,
     "src": "/images/play/roma-02.jpg",
-    "alt": "Colosseum in Rome, 2024."
+    "alt": { "en": "Colosseum in Rome, 2024.", "es": "Coliseo de Roma, 2024." }
   },
   {
     "id": 3,
     "src": "/images/play/roma-03.jpg",
-    "alt": "Santa Maria Maggiore, Rome, 2024."
+    "alt": { "en": "Santa Maria Maggiore, Rome, 2024.", "es": "Santa Maria Maggiore, Roma, 2024." }
   },
   {
     "id": 4,
     "src": "/images/play/roma-04.jpg",
-    "alt": "Castel Sant'Angelo, Rome, 2024."
+    "alt": { "en": "Castel Sant'Angelo, Rome, 2024.", "es": "Castel Sant'Angelo, Roma, 2024." }
   },
   {
     "id": 5,
     "src": "/images/play/roma-05.jpg",
-    "alt": "The Colosseum from the Roman Forum, Rome, 2024."
+    "alt": { "en": "The Colosseum from the Roman Forum, Rome, 2024.", "es": "El Coliseo desde el Foro Romano, Roma, 2024." }
   },
   {
     "id": 6,
     "src": "/images/play/sydney-01.jpg",
-    "alt": "Sydney Harbour Bridge, 2024."
+    "alt": { "en": "Sydney Harbour Bridge, 2024.", "es": "Puente de la Bahía de Sídney, 2024." }
   },
   {
     "id": 7,
     "src": "/images/play/sydney-02.jpg",
-    "alt": "Sydney Opera House, 2024."
+    "alt": { "en": "Sydney Opera House, 2024.", "es": "Ópera de Sídney, 2024." }
   },
   {
     "id": 8,
     "src": "/images/play/sydney-03.jpg",
-    "alt": "Bird in the Sydney Botanical Garden, 2024."
+    "alt": { "en": "Bird in the Sydney Botanical Garden, 2024.", "es": "Ave en el Jardín Botánico de Sídney, 2024." }
   }
 ]
